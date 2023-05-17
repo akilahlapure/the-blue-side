@@ -1,1 +1,17 @@
-/*# sourceMappingURL=main.css.map */
+/************** FONT **************/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Glaschu Inline";
+  src: url("../fonts/Glaschu-Inline.woff") format("woff"), url("../fonts/Glaschu-Inline.otf") format("opentype"), url("../fonts/Glaschu-Inline.ttf") format("truetype");
+}
+/************* Reset *************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************* Styling *************/
+body {
+  font-family: "Nunito", sans-serif;
+}/*# sourceMappingURL=main.css.map */
