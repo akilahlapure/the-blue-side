@@ -1,6 +1,6 @@
 @import "variables";
 
-/************* Reset *************/
+/************** Reset **************/
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ body {
 @import "navbar";
 
 
-/************* Hero *************/
+/************** Hero **************/
 
 .hero {
     min-height: 100vh;
@@ -54,4 +54,10 @@ body {
             transform: translateY(0px);
         }
     }
+}
+
+/************** Story **************/
+
+.story {
+    position: fixed;
 }

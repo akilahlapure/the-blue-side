@@ -5,7 +5,7 @@
   src: url("../fonts/Glaschu-Inline.woff") format("woff"), url("../fonts/Glaschu-Inline.otf") format("opentype"), url("../fonts/Glaschu-Inline.ttf") format("truetype");
 }
 /************** COLORS **************/
-/************* Reset *************/
+/************** Reset **************/
 * {
   margin: 0;
   padding: 0;
@@ -188,7 +188,7 @@ body {
     display: inline-block;
   }
 }
-/************* Hero *************/
+/************** Hero **************/
 .hero {
   min-height: 100vh;
   align-items: center;
@@ -216,4 +216,9 @@ body {
   100% {
     transform: translateY(0px);
   }
+}
+
+/************** Story **************/
+.story {
+  position: fixed;
 }/*# sourceMappingURL=main.css.map */
