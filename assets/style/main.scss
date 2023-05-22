@@ -7,7 +7,51 @@
     box-sizing: border-box;
 }
 
-/************* Styling *************/
+/************* General *************/
 body {
     font-family: $font-body;
+}
+
+/************* Navbar *************/
+@import "navbar";
+
+
+/************* Hero *************/
+
+.hero {
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    // background-image: url(../images/bg.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+    .up-botton-text {
+        position: absolute;
+        top: 50%;
+        left: -20%;
+
+        h5 {
+            transform: rotate(90deg);
+        }
+    }
+
+    .icon-image {
+        max-width: 50px;
+        animation: ani-bg 3s infinite;
+    }
+
+    @keyframes ani-bg {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(18px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
 }

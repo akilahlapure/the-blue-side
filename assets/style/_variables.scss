@@ -10,3 +10,67 @@
   
 $font-body: 'Nunito', sans-serif;
 $font-title: 'Glaschu Inline', sans-serif;
+
+/************** COLORS **************/
+
+$base-blue: #364f6b;
+$base-blue-dark: #253649;
+$base-blue-light: #47688d;
+
+$base-grey: #dbdbdb;
+$base-grey-light: #f5f5f5;
+
+$white: #ffffff;
+$dark: #183b56;
+$light: #f8f9fc;
+$muted: #838485;
+$black: #000000;
+
+$white-70: rgba($white, 0.70);
+
+// stylelint-disable
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$gray-dark-100: #242C34;
+$gray-dark-200: #283039;
+$gray-dark-300: #303841;
+$gray-dark-400: #3d454e;
+$gray-dark-500: #63686f;
+$gray-dark-600: #767B81;
+$gray-dark-700: #CED1D2;
+$gray-dark-800: #CFD1D2;
+$gray-dark-900: #D4D5D7;
+
+$colors: (
+    "base-blue": $base-blue,
+    "base-blue-dark":$base-blue-dark,
+    "base-blue-light": $base-blue-light,
+    "base-grey": $base-grey,
+    "base-grey-light": $base-grey-light,
+    "dark": $dark,
+    "muted": $muted,
+    "light": $light,
+    "white": $white,
+    "white-70": $white-70,
+);
+
+$theme-colors: (
+    "base-blue": $base-blue,
+    "base-blue-dark":$base-blue-dark,
+    "base-blue-light": $base-blue-light,
+    "base-grey": $base-grey,
+    "base-grey-light": $base-grey-light,
+    "light": $light,
+    "dark": $dark,
+    "muted": $muted,
+    "white": $white,
+    "white-70": $white-70,
+);
