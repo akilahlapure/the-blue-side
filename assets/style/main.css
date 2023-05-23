@@ -21,6 +21,10 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+.spacer {
+  background-color: #020610;
+}
+
 /************* Navbar *************/
 @media only screen and (min-width: 1600px) {
   .container-fluid {
@@ -32,6 +36,9 @@ body {
   transition: all 0.5s ease;
   padding: 0;
   background-color: transparent !important;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 .navbar .logo .logo-light {
   display: none;
@@ -120,15 +127,6 @@ body {
   display: block !important;
 }
 
-.nav-sticky.navbar {
-  background: #ffffff !important;
-  margin-top: 0px;
-  box-shadow: 0px 3px 10px 0px rgba(24, 59, 86, 0.2);
-}
-.nav-sticky .nav-item .nav-link {
-  color: #183b56 !important;
-}
-
 @media (min-width: 992px) and (max-width: 1200px) {
   .navbar .navbar-nav .nav-link {
     padding: 25px 15px;
@@ -137,19 +135,15 @@ body {
 @media (max-width: 992px) {
   .navbar {
     padding: 14px 0;
-    background-color: #ffffff !important;
   }
   .navbar .navbar-nav .nav-item .nav-link {
     padding: 8px 15px;
-    color: #183b56 !important;
   }
 }
 @media (min-width: 200px) and (max-width: 1024px) {
   .navbar-custom {
     margin-top: 0px;
     padding: 10px 0px !important;
-    color: #ffffff !important;
-    background: #ffffff;
   }
   .navbar-custom .navbar-nav {
     margin-left: 0px;
@@ -197,6 +191,12 @@ body {
   min-height: 100vh;
   align-items: center;
   display: flex;
+  background-image: url(../images/wave-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .hero .up-botton-text {
   position: absolute;
@@ -223,6 +223,11 @@ body {
 }
 
 /************** Story **************/
+#readStory {
+  position: relative;
+  z-index: 3;
+}
+
 .section {
   position: relative;
   width: 100%;
@@ -231,25 +236,32 @@ body {
 }
 .section p {
   position: sticky;
-  top: 500px;
+  top: 560px;
   max-width: 600px;
   margin: auto;
 }
 
 .section:nth-child(2n+1) {
-  background: #f8f9fa;
-}
-
-.section:nth-child(3n) {
   background: #e9ecef;
 }
 
-.section:nth-child(2n) {
+.section:nth-child(3n) {
   background: #dee2e6;
+}
+
+.section:nth-child(2n) {
+  background: #ced4da;
+}
+
+#s1 {
+  background-color: #020610;
+  color: #ffffff;
 }
 
 /************** Download Section **************/
 .section-download {
+  position: relative;
+  z-index: 1;
   min-height: 100vh;
   text-align: center;
   display: flex;

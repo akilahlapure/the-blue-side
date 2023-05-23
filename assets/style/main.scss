@@ -16,6 +16,10 @@ body {
     font-family: $font-body;
 }
 
+.spacer {
+    background-color: $base-dark;
+}
+
 /************* Navbar *************/
 @import "navbar";
 
@@ -26,9 +30,12 @@ body {
     min-height: 100vh;
     align-items: center;
     display: flex;
-    // background-image: url(../images/bg.png);
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    background-image: url(../images/wave-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
 
     .up-botton-text {
         position: absolute;
@@ -62,6 +69,11 @@ body {
 
 /************** Story **************/
 
+#readStory {
+    position: relative;
+    z-index: 3;
+}
+
 .section {
     position: relative;
     width: 100%;
@@ -71,20 +83,29 @@ body {
     p {
         position: sticky;
         // bottom: 0px;
-        top: 500px;
+        top: 560px;
         // transform: translateY(-50%);
         max-width: 600px;
         margin: auto;
     }
 }
 
-.section:nth-child(2n+1) { background: $gray-100;  }
-.section:nth-child(3n) { background: $gray-200; }
-.section:nth-child(2n) { background: $gray-300; }
+.section:nth-child(2n+1) { background: $gray-200; }
+.section:nth-child(3n) { background: $gray-300; }
+.section:nth-child(2n) { background: $gray-400; }
+
+#s1 {
+    background-color: $base-dark;
+    color: $white;
+}
+
+
 
 /************** Download Section **************/
 
 .section-download {
+    position: relative;
+    z-index: 1;
     min-height: 100vh;
     text-align: center;
     display: flex;

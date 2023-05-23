@@ -10,6 +10,9 @@
     transition: all 0.5s ease;
     padding: 0;
     background-color: transparent !important;
+    position: sticky;
+    top: 0;
+    z-index: 2;
   
     .logo {
       .logo-light {
@@ -150,21 +153,6 @@
   }
   
   
-  //nav-sticy
-  .nav-sticky {
-    &.navbar {
-      background: $white !important;
-      margin-top: 0px;
-      box-shadow: 0px 3px 10px 0px rgba($dark, 0.20);
-    }
-  
-      .nav-item{
-        .nav-link{
-          color: $dark !important;
-        }
-      }
-  }
-  
   @media (min-width:992px) and (max-width:1200px) {
     .navbar .navbar-nav .nav-link {
       padding: 25px 15px;
@@ -174,13 +162,11 @@
   @media (max-width: 992px) {
     .navbar {
       padding: 14px 0;
-      background-color: $white !important;
   
       .navbar-nav {
         .nav-item {
           .nav-link {
             padding: 8px 15px;
-            color: $dark !important;
           }
         }
       }
@@ -191,8 +177,6 @@
     .navbar-custom {
       margin-top: 0px;
       padding: 10px 0px !important;
-      color: $white !important;
-      background: $white;
   
       .navbar-nav {
         margin-left: 0px;
