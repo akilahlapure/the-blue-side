@@ -24,6 +24,7 @@ body {
 
 .spacer {
   background-color: #020610;
+  height: 100vh;
 }
 
 /************* Navbar *************/
@@ -243,18 +244,6 @@ body {
   margin: auto;
 }
 
-.section:nth-child(2n+1) {
-  background: #e9ecef;
-}
-
-.section:nth-child(3n) {
-  background: #dee2e6;
-}
-
-.section:nth-child(2n) {
-  background: #ced4da;
-}
-
 #s1 {
   background-color: #020610;
   background-image: url(../images/starss.png);
@@ -303,8 +292,20 @@ body {
 }
 
 /************** Download Section **************/
-.section-download {
-  background-image: url(../images/wave-background.png);
+.space {
+  background-image: url(../images/wave-background-flip.png);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+.section-download {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

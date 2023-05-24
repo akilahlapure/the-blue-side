@@ -87,7 +87,7 @@
         <div class="background-line"></div>
     </header>
 
-    <div class="spacer" style="height: 100vh;"></div>
+    <div class="spacer"></div>
 
     <main id="readStory">
 
@@ -173,68 +173,7 @@
 
         <!-- <br> -->
 
-        <!-- <div class="story">
-            <a href="#s1" class="page">
-                In the deep blue ocean, there was a whale that had a hauntingly beautiful voice. She loved to sing,
-                and would often sing for hours on end, making use of her voice to create beautiful melodies and music.
-                However, no matter how beautiful or how loud, nobody in the ocean ever heard her sing. You see, the whale's
-                frequency was different from that of the other animals.
-            </a>
-            <a href="#s2" class="page">
-                For years, the whale sang her heart out to the empty sea, she drifted in the hopes of finding a friend,
-                a companion that could hear her voice in the deep waters. She would swim from place to place, but no matter
-                where she went, her songs fell upon deaf ears. She would call out to other animals, but they could never
-                hear it,
-                nodding politely as they swam away.
-            </a>
-            <a href="#s3" class="page">
-                The whale knew that she was different from the others, but didn't understand why. She didn't know that the
-                other
-                animals couldn't hear her voice because of her different frequency. All the whale knew was that she was
-                alone and
-                unheard in the vast expanse of the ocean.
-            </a>
-            <a href="#s4" class="page">
-                One day, a young boy was on a boat, tossing rocks into the ocean when he heard a faint sound. He looked over
-                the edge
-                of the boat and saw a figure deep beneath the surface. It was the whale, singing its heart out. The whale's
-                voice was
-                soft and melodious, and the child felt that he had to follow it. The boy listened intently, marveling at the
-                beauty of
-                the whale's song. As he’s listening, he tried to match her song by humming the tunes. This caught the
-                whale’s ear and
-                so she swam closer to the surface where the voice is. The young boy reached out and started talking to the
-                whale. At
-                first, she was hesitant because she thought that humans could be dangerous. But this child was different.
-                She sees the
-                child look at her with his big doe eyes filled with wonder and she knew that he meant no harm. They started
-                talking and
-                soon enough, they formed an instant connection, a bond that echoed through the waves.
-            </a>
-            <a href="#s5" class="page">
-                From that day on, the young boy and the whale became the most unlikely of friends. As time passed, the child
-                kept coming
-                back to visit the whale and with each visit, their friendship grew stronger as they learn more about each
-                other. The child
-                would always come back with a smile on his face and bring stories to tell about his world, and the whale
-                would sing songs
-                of the ocean, sharing stories of the creatures she had encountered in the depths. As they talked, something
-                stirred within
-                the whale, something she hadn’t felt before. For the first time in her life, she didn’t feel so alone.
-            </a>
-            <a href="#s6" class="page">
-                Over time, their friendship grew and deepened. The young boy would bring the whale treats, like seaweed and
-                small fish, and
-                the whale would let out sprays of water to play with the child. And with each passing day, the whale felt
-                more and more
-                connected to this wonderful child who had shown her such kindness.
-            </a>
-            <a href="#s7" class="page">
-                And so, even though the whale couldn’t be heard by others, she now knows that she is not alone. Even if it
-                was just one person,
-                she was grateful that someone reached out and listened to her story.
-            </a>
-        </div> -->
+        <div id="space" class="space"></div>
 
         <section id="download" class="section-download">
             <h5>Share your own stories. Start new adventures. Connect with one another.</h5>
@@ -277,6 +216,14 @@
         })
 
         var waypoint = new Waypoint({
+            element: document.getElementById('space'),
+            handler: function () {
+                console.log('End of story.')
+                document.getElementById("navbar").style.zIndex = "2"
+            }
+        })
+
+        var waypoint = new Waypoint({
             element: document.getElementById('download'),
             handler: function () {
                 console.log('Download Section')
@@ -284,44 +231,8 @@
             }
         })
 
-        var waypoint = new Waypoint({
-            element: document.getElementById('s7'),
-            handler: function () {
-                console.log('End of story.')
-                document.getElementById("navbar").style.zIndex = "2"
-            }
-        })
     </script>
 
-    <!-- <script>
-        var $box1 = $('#s1');
-        
-        $box1.waypoint(function(direction) {
-            var $image1 = $('#moon');
-
-            if (direction=='down') {
-                $image1.addClass('animate__swing'); 				
-            }
-            else {
-                $image1.removeClass('animate__swing'); 					
-            }
-        },
-
-        {offset:'70%'}); /** distance from top of the screen */
-
-        /********************************************/
-        var $box2 = $('#s3');
-
-        $box2.waypoint(function(direction) {
-            if (direction=='down') {
-                $box2.addClass('animate__zoomIn'); 					
-            }
-            else {
-                $box2.removeClass('animate__zoomIn'); 					
-            }
-        },
-	{offset:'60%'});
-    </script> -->
 </body>
 
 </html>
