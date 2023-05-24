@@ -136,15 +136,23 @@ body {
     @include section(linear-gradient(180deg, $base-blue 0%, $base-blue-light 100%));
 }
 
+#s5 {
+    @include section(linear-gradient(180deg, $base-blue-light 0%, $base-blue 100%));
+}
+
+#s6 {
+    @include section(linear-gradient(180deg, $base-blue 0%, $base-blue-dark 100%));
+}
+
+#s7 {
+    @include section(linear-gradient(180deg, $base-blue-dark 0%, $base-dark 100%));
+}
+
 
 /************** Download Section **************/
 
 .section-download {
-    position: relative;
-    z-index: 1;
-    min-height: 100vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-image: url(../images/wave-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

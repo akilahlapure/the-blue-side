@@ -287,13 +287,24 @@ body {
   color: #ffffff;
 }
 
+#s5 {
+  background: linear-gradient(180deg, #47688d 0%, #364f6b 100%);
+  color: #ffffff;
+}
+
+#s6 {
+  background: linear-gradient(180deg, #364f6b 0%, #253649 100%);
+  color: #ffffff;
+}
+
+#s7 {
+  background: linear-gradient(180deg, #253649 0%, #020610 100%);
+  color: #ffffff;
+}
+
 /************** Download Section **************/
 .section-download {
-  position: relative;
-  z-index: 1;
-  min-height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-image: url(../images/wave-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
