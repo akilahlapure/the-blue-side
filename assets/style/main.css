@@ -5,6 +5,7 @@
   src: url("../fonts/Glaschu-Inline.woff") format("woff"), url("../fonts/Glaschu-Inline.otf") format("opentype"), url("../fonts/Glaschu-Inline.ttf") format("truetype");
 }
 /************** COLORS **************/
+/********* Utility Classes ********/
 /************** Reset **************/
 * {
   margin: 0;
@@ -236,7 +237,8 @@ body {
 }
 .section p {
   position: sticky;
-  top: 560px;
+  top: 50%;
+  transform: translateY(-50%);
   max-width: 600px;
   margin: auto;
 }
@@ -255,6 +257,33 @@ body {
 
 #s1 {
   background-color: #020610;
+  background-image: url(../images/starss.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #ffffff;
+  position: relative;
+}
+#s1 img {
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  height: 250px;
+}
+
+#s2 {
+  background: linear-gradient(180deg, #020610 0%, #253649 100%);
+  color: #ffffff;
+}
+
+#s3 {
+  background: linear-gradient(180deg, #253649 0%, #364f6b 100%);
+  color: #ffffff;
+}
+
+#s4 {
+  background: linear-gradient(180deg, #364f6b 0%, #47688d 100%);
   color: #ffffff;
 }
 

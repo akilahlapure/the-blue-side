@@ -1,5 +1,17 @@
 @import "variables";
 
+/********* Utility Classes ********/
+%flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin section($bg) {
+    background: $bg;
+    color: $white;
+}
+
 /************** Reset **************/
 * {
     margin: 0;
@@ -83,8 +95,8 @@ body {
     p {
         position: sticky;
         // bottom: 0px;
-        top: 560px;
-        // transform: translateY(-50%);
+        top: 50%;
+        transform: translateY(-50%);
         max-width: 600px;
         margin: auto;
     }
@@ -96,9 +108,33 @@ body {
 
 #s1 {
     background-color: $base-dark;
+    background-image: url(../images/starss.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     color: $white;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 30%;
+        right: 20%;
+        height: 250px;
+    }
 }
 
+#s2 {
+    @include section(linear-gradient(180deg, $base-dark 0%, $base-blue-dark 100%));
+}
+
+#s3 {
+    @include section(linear-gradient(180deg, $base-blue-dark 0%, $base-blue 100%));
+}
+
+#s4 {
+    @include section(linear-gradient(180deg, $base-blue 0%, $base-blue-light 100%));
+}
 
 
 /************** Download Section **************/
@@ -112,9 +148,3 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-
-// .story {
-//     position: fixed;
-// 	top: 50%;
-// 	left: 50%;
-// }
