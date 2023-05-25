@@ -242,6 +242,9 @@ body {
   transform: translateY(-50%);
   max-width: 600px;
   margin: auto;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 #s1 {
@@ -265,19 +268,23 @@ body {
   background: linear-gradient(180deg, #020610 0%, #253649 100%);
   color: #ffffff;
 }
+#s2 img {
+  position: absolute;
+  bottom: 0;
+}
 
 #s3 {
-  background: linear-gradient(180deg, #253649 0%, #364f6b 100%);
+  background: linear-gradient(180deg, #b6e3ee 0%, #47688d 100%);
   color: #ffffff;
 }
 
 #s4 {
-  background: linear-gradient(180deg, #364f6b 0%, #47688d 100%);
+  background: linear-gradient(180deg, #47688d 0%, #364f6b 100%);
   color: #ffffff;
 }
 
 #s5 {
-  background: linear-gradient(180deg, #47688d 0%, #364f6b 100%);
+  background-color: #364f6b;
   color: #ffffff;
 }
 

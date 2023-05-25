@@ -99,6 +99,9 @@ body {
         transform: translateY(-50%);
         max-width: 600px;
         margin: auto;
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: justify;
     }
 }
 
@@ -126,18 +129,25 @@ body {
 
 #s2 {
     @include section(linear-gradient(180deg, $base-dark 0%, $base-blue-dark 100%));
+
+    img {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 #s3 {
-    @include section(linear-gradient(180deg, $base-blue-dark 0%, $base-blue 100%));
+    @include section(linear-gradient(180deg, #b6e3ee 0%, $base-blue-light 100%));
 }
 
 #s4 {
-    @include section(linear-gradient(180deg, $base-blue 0%, $base-blue-light 100%));
+    @include section(linear-gradient(180deg, $base-blue-light 0%, $base-blue 100%));
 }
 
 #s5 {
-    @include section(linear-gradient(180deg, $base-blue-light 0%, $base-blue 100%));
+    // @include section(linear-gradient(180deg, $base-blue 0%, $base-blue-dark 100%));
+    background-color: $base-blue;
+    color: $white;
 }
 
 #s6 {
