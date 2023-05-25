@@ -273,9 +273,24 @@ body {
   bottom: 0;
 }
 
-#s3 {
+.space-s2-s3 {
   background: linear-gradient(180deg, #b6e3ee 0%, #47688d 100%);
   color: #ffffff;
+  height: 700px;
+}
+
+#s3 {
+  background: #47688d;
+  color: #ffffff;
+}
+#s3 img {
+  position: absolute;
+  bottom: 100px;
+}
+
+.space-s3-s4 {
+  background-color: #47688d;
+  height: 250px;
 }
 
 #s4 {
@@ -299,7 +314,7 @@ body {
 }
 
 /************** Download Section **************/
-.space {
+.end {
   background-image: url(../images/wave-background-flip.png);
   background-repeat: no-repeat;
   background-size: cover;
