@@ -276,7 +276,7 @@ body {
 .space-s2-s3 {
   background: linear-gradient(180deg, #b6e3ee 0%, #47688d 100%);
   color: #ffffff;
-  height: 700px;
+  height: 800px;
 }
 
 #s3 {
@@ -289,13 +289,30 @@ body {
 }
 
 .space-s3-s4 {
+  position: relative;
   background-color: #47688d;
   height: 250px;
+}
+.space-s3-s4 .img-sun {
+  position: absolute;
+  top: 1%;
+  left: 20%;
 }
 
 #s4 {
   background: linear-gradient(180deg, #47688d 0%, #364f6b 100%);
   color: #ffffff;
+  height: 1800px;
+}
+#s4 .img-clouds-l {
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+#s4 .img-clouds-r {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 #s5 {
