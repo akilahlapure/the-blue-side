@@ -319,6 +319,16 @@ body {
   background-color: #364f6b;
   color: #ffffff;
 }
+#s5 .img-clouds-l {
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+#s5 .img-clouds-r {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
 #s6 {
   background: linear-gradient(180deg, #364f6b 0%, #253649 100%);
@@ -328,6 +338,12 @@ body {
 #s7 {
   background: linear-gradient(180deg, #253649 0%, #020610 100%);
   color: #ffffff;
+}
+#s7 img {
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  transform: translateX(-50%);
 }
 
 /************** Download Section **************/

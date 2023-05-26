@@ -182,6 +182,18 @@ body {
 #s5 {
     background-color: $base-blue;
     color: $white;
+
+    .img-clouds-l {
+        position: absolute;
+        left: 0;
+        top: 30%;
+    }
+
+    .img-clouds-r {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
 
 #s6 {
@@ -190,6 +202,13 @@ body {
 
 #s7 {
     @include section(linear-gradient(180deg, $base-blue-dark 0%, $base-dark 100%));
+
+    img {
+        position: absolute;
+        top: 25%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 
